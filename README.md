@@ -9,7 +9,6 @@
   [![Downloads](https://img.shields.io/github/downloads/StefFriend/0ver/total)](https://github.com/StefFriend/0ver/releases)
 </div>
 
-
 ## Overview
 
 0ver is a powerful forensic utility designed for digital investigators, security professionals, and system administrators to verify and securely wipe hard drives. It scans storage devices at the sector level to detect non-zero data and provides the option to selectively zero out these sectors, ensuring complete data elimination for forensic purposes.
