@@ -35,7 +35,7 @@
 
 For users who prefer not to install Python or dependencies, we provide a standalone executable:
 
-1. Navigate to the [Releases](https://github.com/yourusername/0ver/releases) page
+1. Navigate to the [Releases](https://github.com/StefFriend/0ver/releases) page
 2. Download the latest `0ver-vX.X.X.exe` file
 3. Run with administrator privileges
 
