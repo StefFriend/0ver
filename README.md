@@ -6,8 +6,7 @@
   ![0ver Banner](https://img.shields.io/badge/0ver-Forensic%20Disk%20Verification%20%26%20Wiping%20Tool-blue)
   [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
   [![Release](https://img.shields.io/github/v/release/StefFriend/0ver?include_prereleases)](https://github.com/StefFriend/0ver/releases)
-  [![Downloads](https://img.shields.io/github/downloads/StefFriend/0ver/total)](https://github.com/StefFriend/0ver/releases)
-</div>
+  </div>
 
 ## Overview
 
