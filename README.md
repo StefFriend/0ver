@@ -1,9 +1,14 @@
 # 0ver - Forensic Disk Verification & Wiping Tool
 
 <div align="center">
-  <img src="logo-placeholder.png" alt="0ver Logo" width="200" />
   <p><em>Pronounced "zero ver(ification)" or simply "Over"</em></p>
+  
+  [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
+  [![Release](https://img.shields.io/github/v/release/yourusername/0ver?include_prereleases)](https://github.com/yourusername/0ver/releases)
+  [![Downloads](https://img.shields.io/github/downloads/yourusername/0ver/total)](https://github.com/yourusername/0ver/releases)
 </div>
+
+
 
 ## Overview
 
