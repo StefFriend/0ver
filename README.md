@@ -2,7 +2,8 @@
 
 <div align="center">
   <p><em>Pronounced "zero ver(ification)" or simply "Over"</em></p>
-  
+
+  ![0ver Banner](https://img.shields.io/badge/0ver-Forensic%20Disk%20Verification%20%26%20Wiping%20Tool-blue)
   [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
   [![Release](https://img.shields.io/github/v/release/yourusername/0ver?include_prereleases)](https://github.com/yourusername/0ver/releases)
   [![Downloads](https://img.shields.io/github/downloads/yourusername/0ver/total)](https://github.com/yourusername/0ver/releases)
