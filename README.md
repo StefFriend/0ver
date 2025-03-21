@@ -39,8 +39,7 @@ For users who prefer not to install Python or dependencies, we provide a standal
 
 1. Navigate to the [Releases](https://github.com/yourusername/0ver/releases) page
 2. Download the latest `0ver-vX.X.X.exe` file
-3. Verify the file integrity using the provided checksums
-4. Run with administrator privileges
+3. Run with administrator privileges
 
 The executable version has the following benefits:
 - No Python installation required
