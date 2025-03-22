@@ -260,8 +260,8 @@ TRANSLATIONS = {
     
     # Log file messages
     "log_scan_start": {
-        "it": "=== INIZIO SCANSIONE DI {0} ===",
-        "en": "=== STARTING SCAN OF {0} ==="
+        "it": "0ver v.0.1.3\n=== INIZIO SCANSIONE DI {0} ===",
+        "en": "0ver v.0.1.3\n=== STARTING SCAN OF {0} ==="
     },
     "log_date_time": {
         "it": "Data/ora: {0}",
@@ -1011,7 +1011,7 @@ def main():
     global LANGUAGE
     
     print("=" * 70)
-    print("Disk Scanner - Non-Zero Sectors Finder")
+    print("0ver - Forensic Disk Verification & Wiping Tool")
     print("=" * 70)
     
     # Language selection
