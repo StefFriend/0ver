@@ -1,0 +1,374 @@
+{
+    "windows_only": {
+        "it": "Questo script è pensato per Windows (os.name != 'nt'). Interrompo.",
+        "en": "This script is designed for Windows (os.name != 'nt'). Aborting."
+    },
+    "admin_warning": {
+        "it": "ATTENZIONE: Lo script potrebbe non funzionare correttamente senza privilegi amministrativi.",
+        "en": "WARNING: The script may not work correctly without administrative privileges."
+    },
+    "admin_suggestion": {
+        "it": "Si consiglia di eseguire lo script come Amministratore.",
+        "en": "It is recommended to run the script as Administrator."
+    },
+    "searching_drives": {
+        "it": "Ricerca drive fisici in corso...",
+        "en": "Searching for physical drives..."
+    },
+    "no_drives_found": {
+        "it": "Non è stato possibile trovare alcun PhysicalDrive apribile. Assicurarsi di essere Admin.",
+        "en": "No accessible PhysicalDrive was found. Make sure you are an Admin."
+    },
+    "inaccessible_drives": {
+        "it": "Drive non accessibili o non leggibili:",
+        "en": "Inaccessible or unreadable drives:"
+    },
+    "available_drives": {
+        "it": "Drive fisici disponibili:",
+        "en": "Available physical drives:"
+    },
+    "select_drive": {
+        "it": "Seleziona il numero del drive [1..{0}]: ",
+        "en": "Select drive number [1..{0}]: "
+    },
+    "invalid_choice": {
+        "it": "Scelta non valida.",
+        "en": "Invalid choice."
+    },
+    "enter_log_file": {
+        "it": "Inserire il nome file di log (default: {0}): ",
+        "en": "Enter log file name (default: {0}): "
+    },
+    "about_to_scan": {
+        "it": "Stai per avviare la scansione di: {0} - {1}",
+        "en": "You are about to scan: {0} - {1}"
+    },
+    "size": {
+        "it": "Dimensione: {0}",
+        "en": "Size: {0}"
+    },
+    "sector_size": {
+        "it": "Dimensione settore: {0} byte",
+        "en": "Sector size: {0} bytes"
+    },
+    "log_file_mode": {
+        "it": "File di log: {0} (Modalità: {1})",
+        "en": "Log file: {0} (Mode: {1})"
+    },
+    "start_scan": {
+        "it": "Avviare la scansione? [s/n]: ",
+        "en": "Start scanning? [y/n]: "
+    },
+    "operation_cancelled": {
+        "it": "Operazione annullata.",
+        "en": "Operation cancelled."
+    },
+    "no_zero_sectors": {
+        "it": "Nessun settore non azzerato, nessuna scrittura necessaria.",
+        "en": "No non-zero sectors found, no writing necessary."
+    },
+    "rewrite_sectors": {
+        "it": "Vuoi riscrivere a zero i {0} settori trovati? [s/n]: ",
+        "en": "Do you want to zero-out the {0} sectors found? [y/n]: "
+    },
+    "rewrite_cancelled": {
+        "it": "Operazione di riscrittura annullata.",
+        "en": "Rewrite operation cancelled."
+    },
+    "operation_interrupted": {
+        "it": "Operazione interrotta dall'utente.",
+        "en": "Operation interrupted by user."
+    },
+    "error_occurred": {
+        "it": "Si è verificato un errore: {0}",
+        "en": "An error occurred: {0}"
+    },
+    "program_terminated": {
+        "it": "Programma terminato.",
+        "en": "Program terminated."
+    },
+    "of_total": {
+        "it": "del totale",
+        "en": "of total"
+    },
+    "choose_log_mode": {
+        "it": "Scegli la modalità di log:",
+        "en": "Choose log mode:"
+    },
+    "log_mode_detailed": {
+        "it": "  1. Completo (registra tutti i settori non-zero)",
+        "en": "  1. Detailed (logs all non-zero sectors)"
+    },
+    "log_mode_summary": {
+        "it": "  2. Riassuntivo (registra solo statistiche generali)",
+        "en": "  2. Summary (logs only general statistics)"
+    },
+    "select_log_mode": {
+        "it": "Seleziona la modalità [1/2]: ",
+        "en": "Select mode [1/2]: "
+    },
+    "log_mode_detailed_name": {
+        "it": "completo",
+        "en": "detailed"
+    },
+    "log_mode_summary_name": {
+        "it": "riassuntivo",
+        "en": "summary"
+    },
+    "scanning_drive": {
+        "it": "Scansione di {0} in corso...",
+        "en": "Scanning {0}..."
+    },
+    "disk_size": {
+        "it": "Dimensione disco: {0}",
+        "en": "Disk size: {0}"
+    },
+    "disk_size_unknown": {
+        "it": "Dimensione disco: Sconosciuta",
+        "en": "Disk size: Unknown"
+    },
+    "log_file": {
+        "it": "File di log: {0}",
+        "en": "Log file: {0}"
+    },
+    "using_workers": {
+        "it": "Utilizzo {0} thread worker",
+        "en": "Using {0} worker threads"
+    },
+    "press_ctrl_c": {
+        "it": "Per interrompere la scansione, premi Ctrl+C",
+        "en": "To interrupt the scan, press Ctrl+C"
+    },
+    "scan_interrupted": {
+        "it": "Scansione interrotta dall'utente (Ctrl+C).",
+        "en": "Scan interrupted by user (Ctrl+C)."
+    },
+    "sectors_found_so_far": {
+        "it": "Settori non azzerati trovati finora: {0}",
+        "en": "Non-zero sectors found so far: {0}"
+    },
+    "partial_results_saved": {
+        "it": "I risultati parziali sono stati salvati nel file di log.",
+        "en": "Partial results have been saved to the log file."
+    },
+    "scan_completed": {
+        "it": "Scansione terminata in {0:.1f} secondi.",
+        "en": "Scan completed in {0:.1f} seconds."
+    },
+    "total_bytes_processed": {
+        "it": "Byte totali elaborati: {0}",
+        "en": "Total bytes processed: {0}"
+    },
+    "error_chunks_warning": {
+        "it": "Attenzione: {0} chunk ({1}) non sono stati letti a causa di errori.",
+        "en": "Warning: {0} chunks ({1}) could not be read due to errors."
+    },
+    "found_nonzero_sectors": {
+        "it": "Trovati {0} settori non azzerati.",
+        "en": "Found {0} non-zero sectors."
+    },
+    "all_sectors_zero": {
+        "it": "Tutti i settori esaminati risultano a zero.",
+        "en": "All examined sectors are zero."
+    },
+    "scan_interrupted_status": {
+        "it": "Scansione interrotta. Elaborati {0} su {1} ({2:.1f}%).",
+        "en": "Scan interrupted. Processed {0} of {1} ({2:.1f}%)."
+    },
+    "no_sectors_to_rewrite": {
+        "it": "Nessun settore da riscrivere.",
+        "en": "No sectors to rewrite."
+    },
+    "cannot_open_log": {
+        "it": "Impossibile aprire il file di log: {0}",
+        "en": "Cannot open log file: {0}"
+    },
+    "cannot_open_drive": {
+        "it": "Impossibile aprire {0} in scrittura: {1}",
+        "en": "Cannot open {0} for writing: {1}"
+    },
+    "starting_rewrite": {
+        "it": "Inizio riscrittura dei settori non zero...",
+        "en": "Starting to rewrite non-zero sectors..."
+    },
+    "press_ctrl_c_rewrite": {
+        "it": "Per interrompere la riscrittura, premi Ctrl+C",
+        "en": "To interrupt the rewrite, press Ctrl+C"
+    },
+    "rewrite_completed": {
+        "it": "Riscrittura completata.",
+        "en": "Rewrite completed."
+    },
+    "rewrite_interrupted": {
+        "it": "Riscrittura interrotta dall'utente (Ctrl+C).",
+        "en": "Rewrite interrupted by user (Ctrl+C)."
+    },
+    "sectors_rewritten": {
+        "it": "Riscritti {0} settori su {1} totali.",
+        "en": "Rewritten {0} sectors out of {1} total."
+    },
+    "sectors_already_zeroed": {
+        "it": "I settori già riscritti sono stati azzerati correttamente.",
+        "en": "The sectors already rewritten have been zeroed correctly."
+    },
+    "read_error": {
+        "it": "Errore di lettura dal disco {0}: {1}",
+        "en": "Error reading from disk {0}: {1}"
+    },
+    "disk_unreadable": {
+        "it": "Il disco sembra esistere ma non è leggibile. Impossibile procedere.",
+        "en": "The disk seems to exist but is not readable. Cannot proceed."
+    },
+    "insufficient_permissions": {
+        "it": "Errore: permessi insufficienti per aprire {0}. Esegui come Administrator.",
+        "en": "Error: insufficient permissions to open {0}. Run as Administrator."
+    },
+    "disk_not_exist": {
+        "it": "Errore: il disco {0} non esiste o non è accessibile.",
+        "en": "Error: disk {0} does not exist or is not accessible."
+    },
+    "access_error": {
+        "it": "Errore di accesso a {0}: {1}",
+        "en": "Access error to {0}: {1}"
+    },
+    "unknown_size": {
+        "it": "Impossibile determinare la dimensione del disco. La scansione continuerà senza indicatore di progresso.",
+        "en": "Unable to determine disk size. The scan will continue without a progress indicator."
+    },
+    "log_scan_start": {
+        "it": "0ver v.0.1.4\n=== INIZIO SCANSIONE DI {0} ===",
+        "en": "0ver v.0.1.4\n=== STARTING SCAN OF {0} ==="
+    },
+    "log_date_time": {
+        "it": "Data/ora: {0}",
+        "en": "Date/time: {0}"
+    },
+    "log_disk_size": {
+        "it": "Dimensione disco: {0}",
+        "en": "Disk size: {0}"
+    },
+    "log_sector_size": {
+        "it": "Dimensione settore: {0} byte",
+        "en": "Sector size: {0} bytes"
+    },
+    "log_workers": {
+        "it": "Worker: {0}",
+        "en": "Workers: {0}"
+    },
+    "log_mode": {
+        "it": "Modalità log: {0}",
+        "en": "Log mode: {0}"
+    },
+    "log_divider": {
+        "it": "======================================",
+        "en": "======================================"
+    },
+    "log_nonzero_sector": {
+        "it": "Offset {0} NON ZERO",
+        "en": "Offset {0} NON ZERO"
+    },
+    "log_error": {
+        "it": "ERRORE: {0}",
+        "en": "ERROR: {0}"
+    },
+    "log_scan_result": {
+        "it": "=== RISULTATO SCANSIONE ===",
+        "en": "=== SCAN RESULT ==="
+    },
+    "log_time_taken": {
+        "it": "Tempo impiegato: {0:.1f} secondi",
+        "en": "Time taken: {0:.1f} seconds"
+    },
+    "log_bytes_processed": {
+        "it": "Byte elaborati: {0}",
+        "en": "Bytes processed: {0}"
+    },
+    "log_total_chunks": {
+        "it": "Chunk totali: {0}",
+        "en": "Total chunks: {0}"
+    },
+    "log_zero_chunks": {
+        "it": "Chunk a zero: {0}",
+        "en": "Zero chunks: {0}"
+    },
+    "log_nonzero_chunks": {
+        "it": "Chunk con settori non-zero: {0}",
+        "en": "Chunks with non-zero sectors: {0}"
+    },
+    "log_error_chunks": {
+        "it": "Chunk con errori: {0} ({1})",
+        "en": "Chunks with errors: {0} ({1})"
+    },
+    "log_nonzero_sectors_found": {
+        "it": "Settori non azzerati trovati: {0}",
+        "en": "Non-zero sectors found: {0}"
+    },
+    "log_nonzero_percentage": {
+        "it": "Percentuale di settori non azzerati: {0:.6f}%",
+        "en": "Percentage of non-zero sectors: {0:.6f}%"
+    },
+    "log_all_sectors_zero": {
+        "it": "TUTTI I SETTORI SONO A ZERO.",
+        "en": "ALL SECTORS ARE ZERO."
+    },
+    "log_scan_interrupted": {
+        "it": "=== SCANSIONE INTERROTTA DALL'UTENTE ===",
+        "en": "=== SCAN INTERRUPTED BY USER ==="
+    },
+    "log_completed_chunks": {
+        "it": "Chunk completati: {0}/{1}",
+        "en": "Completed chunks: {0}/{1}"
+    },
+    "log_incomplete_scan": {
+        "it": "SCANSIONE INCOMPLETA - Risultati parziali",
+        "en": "INCOMPLETE SCAN - Partial results"
+    },
+    "log_rewrite_start": {
+        "it": "=== INIZIO RISCRITTURA ===",
+        "en": "=== STARTING REWRITE ==="
+    },
+    "log_sectors_to_rewrite": {
+        "it": "Settori da riscrivere: {0}",
+        "en": "Sectors to rewrite: {0}"
+    },
+    "log_sector_rewritten": {
+        "it": "Settore a offset {0} riscritto a zero",
+        "en": "Sector at offset {0} rewritten to zero"
+    },
+    "log_rewrite_completed": {
+        "it": "=== RISCRITTURA COMPLETATA ===",
+        "en": "=== REWRITE COMPLETED ==="
+    },
+    "log_sectors_rewritten": {
+        "it": "Settori riscritti: {0}",
+        "en": "Sectors rewritten: {0}"
+    },
+    "log_write_errors": {
+        "it": "Errori di scrittura: {0}",
+        "en": "Write errors: {0}"
+    },
+    "log_rewrite_interrupted": {
+        "it": "=== RISCRITTURA INTERROTTA DALL'UTENTE ===",
+        "en": "=== REWRITE INTERRUPTED BY USER ==="
+    },
+    "log_sectors_rewritten_count": {
+        "it": "Settori riscritti: {0}/{1}",
+        "en": "Sectors rewritten: {0}/{1}"
+    },
+    "select_language": {
+        "it": "Seleziona la lingua / Select language:",
+        "en": "Select language / Seleziona la lingua:"
+    },
+    "language_options": {
+        "it": "  1. Italiano\n  2. English",
+        "en": "  1. Italiano\n  2. English"
+    },
+    "enter_language_choice": {
+        "it": "Inserisci la tua scelta [1/2]: ",
+        "en": "Enter your choice [1/2]: "
+    },
+    "chunk_all_zero": {
+        "it": "Chunk a offset {0} completamente azzerato (ottimizzazione)",
+        "en": "Chunk at offset {0} completely zeroed (optimization)"
+    }
+}
