@@ -86,6 +86,36 @@ class DISK_GEOMETRY(Structure):
         ("BytesPerSector", wintypes.DWORD)
     ]
 
+def disable_quickedit():
+    """
+    Disables Windows console "QuickEdit" mode to prevent the application
+    from pausing when the terminal window is clicked.
+    """
+    if os.name != 'nt':
+        return
+        
+    try:
+        # Constants for Windows API
+        STD_INPUT_HANDLE = -10
+        ENABLE_QUICK_EDIT = 0x0040
+        ENABLE_EXTENDED_FLAGS = 0x0080
+        
+        # Get handle to console input
+        h_stdin = windll.kernel32.GetStdHandle(STD_INPUT_HANDLE)
+        
+        # Get current console mode
+        mode = ctypes.c_ulong()
+        windll.kernel32.GetConsoleMode(h_stdin, ctypes.byref(mode))
+        
+        # Modify mode to disable QuickEdit
+        mode = mode.value & ~ENABLE_QUICK_EDIT
+        mode = mode | ENABLE_EXTENDED_FLAGS
+        
+        # Set new console mode
+        windll.kernel32.SetConsoleMode(h_stdin, mode)
+    except Exception as e:
+        print(f"Error while disabling QuickEdit mode: {e}")
+
 def format_size(size_bytes):
     """
     Format byte sizes in a readable format
@@ -655,6 +685,10 @@ def rewrite_sectors(drive_path, offsets, sector_size, log_filename, log_mode="de
         log_file.close()
 
 def main():
+
+    # Disable QuickEdit mode to prevent the app from freezing when clicking on the terminal	
+    disable_quickedit()
+    
     # Language selection at startup
     global LANGUAGE
     
