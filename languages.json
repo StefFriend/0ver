@@ -236,8 +236,8 @@
         "en": "Unable to determine disk size. The scan will continue without a progress indicator."
     },
     "log_scan_start": {
-        "it": "0ver v.0.1.5\n=== INIZIO SCANSIONE DI {0} ===",
-        "en": "0ver v.0.1.5\n=== STARTING SCAN OF {0} ==="
+        "it": "0ver v.0.1.6\n=== INIZIO SCANSIONE DI {0} ===",
+        "en": "0ver v.0.1.6\n=== STARTING SCAN OF {0} ==="
     },
     "log_date_time": {
         "it": "Data/ora: {0}",
