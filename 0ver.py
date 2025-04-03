@@ -11,22 +11,23 @@ from tqdm import tqdm
 # Global language setting (will be set at runtime)
 LANGUAGE = "en"  # Default language
 
-# load translations from JSON
+def resource_path(relative_path):
+    """Returns the absolute path to the file, whether the app is 'frozen' or not."""
+    # If the app has been 'frozen' with PyInstaller, sys._MEIPASS contains the temporary folder
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        # Otherwise if we're in debug or "normal" execution
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
 def load_translations():
-    if getattr(sys, 'frozen', False):
-        # if app is loaded as bundle (compiled qith PyInstaller)
-        application_path = os.path.dirname(sys.executable)
-    else:
-        # is app is loaded as script
-        application_path = os.path.dirname(os.path.abspath(__file__))
-    
-    json_path = os.path.join(application_path, 'languages.json')
-    
+    json_path = resource_path('languages.json')
     try:
         with open(json_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
-        print(f"Errore nel caricamento delle traduzioni: {e}")
+        print(f"Error loading translations: {e}")
         # fallback translation
         return {
             "error_loading_translations": {
